@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.container {
+	width: 90%;
+	/* padding-inline: 50px; */
+	margin: auto;
+}
+
+/* Header section styles */
+
+header {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-section__brand img {
+	width: 188px;
+	height: 32px;
+	font-size: 2rem;
+}
+
+.navigation a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #808080;
+}
+
+header .navigation a {
+	margin-left: 10px;
+}
+
+.navigation a.active {
+	color: #000;
+}
+
+/* /Header section styles end */
+
+/* Main section styles */
+
+.main-section {
+	/* margin-top: 50px; */
+	margin-bottom: 50px;
+}
+
+.main-section__icon {
+	display: flex;
+	justify-content: center;
+}
+
+.main-section__icon i {
+	height: 60px;
+}
+
+.section__title {
+	font-size: 174px;
+	line-height: 176px;
+	font-weight: 300;
+	color: #333333;
+}
+
+.section__item {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 32px;
+	color: #808080;
+}
+
+.portfolio-item {
+	margin: 0;
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+}
+
+.portfolio-item-1 {
+	background-image: url("./images/image-3.png");
+}
+
+.portfolio-item-2 {
+	background-image: url("./images/image-1.png");
+}
+
+.portfolio-item-3 {
+	background-image: url("./images/image-2.png");
+}
+
+.portfolio-item .left {
+	width: 50%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	display: flex;
+	padding-left: 20%;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.portfolio-item__number {
+	font-family: "Palatino Linotype";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 69px;
+	line-height: 60px;
+	color: #808080;
+}
+
+.portfolio-item__title {
+	font-size: 2rem;
+	color: #fff;
+}
+
+.portfolio-item__description {
+	color: #7a7a7a;
+}
+
+.portfolio-item__action {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer {
+	margin-top: 50px;
+	padding: 50px;
+}
+
+.footer .logo img {
+	width: 150px;
+	height: 25px;
+}
+
+.footer .navigation {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.footer-description {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	color: #b8b8b8;
+}
+
+@media only screen and (max-width: 992px) {
+	.container {
+		width: 90%;
+	}
+
+	.header-section__brand img {
+		width: 150px;
+	}
+
+	.section__title {
+		font-size: 100px;
+		line-height: 100px;
+	}
+
+	.portfolio-item {
+		background-position: 25%;
+		height: 300px;
+	}
+
+	.portfolio-item .left {
+		width: 100%;
+	}
+
+	.portfolio-item__number {
+		font-size: 40px;
+		line-height: 32px;
+	}
+
+	.portfolio-item__title {
+		font-size: 24px;
+	}
+
+	.footer .navigation a {
+		display: flex;
+		flex-direction: column;
+	}
+}
